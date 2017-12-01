@@ -28,6 +28,10 @@ public class Stanowisko {
 		this.id = id;
 		this.nazwa = nazwa;
 	}
+	@Override
+	public String toString() {
+		return nazwa;
+	}
 
 	
 }

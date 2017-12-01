@@ -14,6 +14,7 @@
 <c:forEach var="element" items="${dao.getAllJednostki()}">
 <li> <a href="jednostka.jsp?id=${element.id}">${element.nazwa}</a>
 </c:forEach>
+
 </ol>
 </body>
 </html>
