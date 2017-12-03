@@ -18,6 +18,7 @@
 	<tr><td>Imie:</td><td>${dao.getOsobaById(parameter.id).imie}</td></tr>
 	<tr><td>Nazwisko:</td><td>${dao.getOsobaById(parameter.id).nazwisko}</td></tr>
 	<tr><td>Stanowisko:</td><td>${dao.getOsobaById(parameter.id).stanowisko}</td></tr>
+	<tr><td>Jednostka:</td></tr>
 	</table>
 
 </td>
