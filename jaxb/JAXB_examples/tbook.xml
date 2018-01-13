@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<book>
+    <persons>
+        <person id="1">
+            <name>Ada</name>
+            <surname>Mokra</surname>
+            <tel type="mobile">698986698</tel>
+            <address>Tajny adres</address>
+        </person>
+        <person id="1">
+            <name>Adam</name>
+            <surname>Mokry</surname>
+            <tel type="mobile">898986698</tel>
+            <address>Bardzo tajny adres</address>
+        </person>
+    </persons>
+</book>
