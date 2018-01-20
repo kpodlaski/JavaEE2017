@@ -23,4 +23,8 @@ public class Contact {
 		this.tel = tel;
 	}
 	
+	public Contact(){
+		this.name="";
+		this.tel="";
+	}
 }
