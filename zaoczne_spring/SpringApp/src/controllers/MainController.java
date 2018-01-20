@@ -73,7 +73,7 @@ public class MainController {
 	public ModelAndView newContact(@PathVariable int id){
 		ModelAndView mv = new ModelAndView("contact");
 		Contact c = book.getContacts().get(id);
-		//mv.addObject("title","Kontakt "+id);
+		mv.addObject("title","Kontakt "+id);
 		mv.addObject("contact",c);
 		return mv;
 	}
@@ -102,7 +102,7 @@ public class MainController {
 	@RequestMapping(value="contact",method=RequestMethod.GET)
 	public ModelAndView contactList(){
 		ModelAndView mv = new ModelAndView("contact_list");
-		//mv.addObject("title","Lista Kontaktów");
+		mv.addObject("title","Lista Kontaktów");
 		mv.addObject("contacts",book.getContacts());
 		return mv;
 	}

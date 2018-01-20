@@ -18,7 +18,7 @@
 		<mvc:message-converters>
 			<bean
 				class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-				<property name="objectMapper" ref="objectMapper" />
+				<property name="objectMapper" ref="jsonMapper" />
 			</bean>
 			<bean
 				class="org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter">
@@ -27,12 +27,12 @@
 		</mvc:message-converters>
 	</mvc:annotation-driven>
 
-	<bean id="objectMapper"
+	<bean id="jsonMapper"
 		class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean"
 		p:indentOutput="true" p:simpleDateFormat="yyyy-MM-dd"
 		p:modulesToInstall="com.fasterxml.jackson.module.paramnames.ParameterNamesModule" />
 
-	<bean id="xmlMapper" parent="objectMapper" p:createXmlMapper="true" />
+	<bean id="xmlMapper" parent="jsonMapper" p:createXmlMapper="true" />
 
 
 	<bean
